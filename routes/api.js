@@ -18,7 +18,7 @@ mongoose.connect(CONNECTION_STRING, { useNewUrlParser: true }, (err) => {
     console.log('Connect mongo success')
 })
 
-const thingSchema = new Schema({}, { strict: false });
+const thingSchema = new mongoose.Schema({}, { strict: false });
 const Issue = mongoose.model('Issue', thingSchema);
 
 
